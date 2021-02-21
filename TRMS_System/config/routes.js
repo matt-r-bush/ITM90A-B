@@ -33,6 +33,25 @@ module.exports.routes = {
   'GET /account/password':   { action: 'account/view-edit-password' },
   'GET /account/profile':    { action: 'account/view-edit-profile' },
 
+  // ALL
+  'GET /cart':               { action: 'view-cart' },
+  'GET /product':            { action: 'view-product' },
+  'GET /search':             { action: 'view-search' },
+  
+  // CUSTOMER
+  'GET /customers/checkout':        { action: 'customers/view-checkout' },
+  'GET /customers/orders':          { action: 'customers/view-orders' },
+  'GET /customers/ordersummary':    { action: 'customers/view-ordersummary' },
+
+  // COMPANY
+  'GET /company/contracts':         { action: 'company/view-contracts' },
+  'GET /company/contractdetails':   { action: 'company/view-contractdetails' },
+  'GET /company/requestquote':      { action: 'company/view-requestquote' },
+  'GET /company/quotes':            { action: 'company/view-quotes' },
+  'GET /company/quotedetails':      { action: 'company/view-quotedetails' },
+  'GET /company/invoice':           { action: 'company/view-invoice' },
+  'GET /company/payment':           { action: 'company/view-payment' },
+
 
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗
   //  ║║║║╚═╗║    ╠╦╝║╣  ║║║╠╦╝║╣ ║   ║ ╚═╗  ┌┼─   ║║║ ║║║║║║║║  ║ ║╠═╣ ║║╚═╗
